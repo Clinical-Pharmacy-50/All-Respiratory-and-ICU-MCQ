@@ -320,7 +320,7 @@
         
         <div class="flex-row">
             <button class="btn-large btn-blue" onclick="selectCategory('respiratory')">
-                🫁 RESPIRATORY
+                🩺 RESPIRATORY
             </button>
             <button class="btn-large btn-blue" onclick="selectCategory('icu')">
                 🏥 ICU
@@ -575,7 +575,7 @@
             addChapterBtn('Coagulants', 'coagulants');
             addChapterBtn('ALL COMBINED 🧩', 'all_icu');
         } else {
-            addChapterBtn('COPD 🫁', 'copd');
+            addChapterBtn('COPD 🩺', 'copd');
             addChapterBtn('Cystic Fibrosis (CF) 🧬', 'cf');
             addChapterBtn('ALL COMBINED 🧩', 'all_resp');
         }
@@ -805,7 +805,7 @@
             feedbackDiv.innerHTML = "Well done handsome 💙";
             feedbackDiv.className = "feedback-msg msg-correct";
         } else {
-            feedbackDiv.innerHTML = `Better luck next time 😢<br><span class="keyword-box">بصمج دي 🫣 : ${keyword}</span>`;
+            feedbackDiv.innerHTML = `Better luck next time 🙂<br><span class="keyword-box">بصمج دي ✔️ : ${keyword}</span>`;
             feedbackDiv.className = "feedback-msg msg-wrong";
         }
     }
@@ -872,7 +872,7 @@
                 arabicMsgDiv.innerText = "مبروووك يا بطل 💪 ممكن تعيد تاني!";
                 btnAgain.style.display = 'block'; // Show again
             } else {
-                arabicMsgDiv.innerText = "محتاج تجرب تاني يا معلم 🫶";
+                arabicMsgDiv.innerText = "محتاج تجرب تاني يا معلم 🙂";
                 btnAgain.style.display = 'block'; // Show again
             }
 
@@ -903,7 +903,7 @@
                 <div class="review-q">Q${item.qData.n}: ${item.qData.q}</div>
                 <div class="review-wrong">❌ Yours: ${item.userAns}</div>
                 <div class="review-correct">✔️ Correct: ${item.correctAns}</div>
-                <div style="margin-top:10px; color:var(--secondary-blue); font-weight:bold; font-size:14px;">بصمج دي 🫣 : ${item.qData.k}</div>
+                <div style="margin-top:10px; color:var(--secondary-blue); font-weight:bold; font-size:14px;">بصمج دي ✔️ : ${item.qData.k}</div>
             `;
             reviewList.appendChild(div);
         });
